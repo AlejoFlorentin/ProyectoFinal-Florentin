@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+background-color:#fcfcd5;
+
+}
+
+p{
+font-family: 'Quicksand', sans-serif;
+}
+h2  {
+ font-family: 'Mohave', sans-serif;
+}
+ 
+h1{
+    font-family: 'Mohave', sans-serif;
+}
+
+h3{
+font-family: 'Mohave', sans-serif;
+}
+
+/* NAVEGADOR */
+
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.Logo-container{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100px;
+
+}
+
+.Logo{
+    width: 175px;
+    height: 75px;
+    border-radius: 360px;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 1,25em;
+    height: 60px;
+    ;
+    
+}
+
+#check_menu,header label{
+    display:none;
+}
+
+header label i{
+
+    font-size: 50px;
+
+}
+
+.nav-bar .nav-item{
+    margin-left: 100px;
+    
+}
+
+.nav-bar a:hover{
+    color: aqua;
+
+}
+
+i{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* INDEX */
+
+.index-main{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.historia{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f1b7;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 15px;
+    margin-bottom: 50px;
+}
+
+.historia h2{
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.Primer-sucursal{
+    margin-bottom: 50px;
+    background-color: #f1f1b7;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    
+}
+
+.primer-sucursal-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.primer-sucursal-img img{
+    width: 750px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.primer-sucursal-img iframe{
+    border-radius: 25px;
+    margin-top: 50px;
+    
+    
+}
+
+
+.primer-sucursal-img .mapa{
+    position: absolute;
+    right: 1400px;
+    top: 725px;
+    border-radius: 20px;
+    
+}
+
+.carrusel{
+    height: 550px;
+    border-radius: 15px;
+       
+}
+
+.carrusel-container{
+    width: 55%;
+    
+    border-radius: 20px;
+
+}
+
+/* RESERVA */
+
+.main-reserva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-reserva{
+    text-align: center;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 600px;
+    width: 400px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+.form-reserva input:hover {
+    background-color: rgb(240, 240, 240);
+    border-color: blue;
+
+}
+
+.form-contacto{
+        text-align: center;
+        background-color: rgb(219, 219, 219);
+        border: solid rgb(207, 200, 200) 1px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        height: 550px;
+        width: 400px;
+        position: relative;
+        
+}
+
+/* CONTACTO */
+
+.form-contacto input:hover{
+    background-color:rgb(240, 240, 240);
+    border-color: rgb(190, 255, 255);
+}
+
+.contacto-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 150px;
+    margin-top: 115px;
+}
+
+.contacto-container img{
+    border: solid gray 1px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+label{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+input{
+    border-radius: 5px;
+    width: 250px;
+    height:35px ;
+    border-color: white;
+    padding: 10px;
+    
+}
+
+#fecha{
+    width:110px;
+}
+
+#hora{
+    width: 110px;
+
+}
+
+#boton{
+    width: 150px;
+    height: 30px ;
+    padding: 5px;
+}
+
+/* CARTA */
+
+.main-menu h2{
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.platos-container{
+display: grid;
+grid-template-columns: repeat(3,680px);
+background-color: #f1f1b7;
+border-radius: 30px;
+margin: 30px;
+}
+
+.Platos img{
+    height: 250px;
+    width: 250px;
+    border-radius: 360px;
+    border: solid 5px #e9e9e9;
+    
+}
+
+.Platos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    background-color: #fcfcd5;
+    border-radius: 50px;
+    
+}
+
+.Platos:hover {
+    border: white solid 0.5px;
+}
+
+.Platos h3 {
+    margin-bottom: 10px;
+}
+
+/* SUCURSALES */
+
+.sucursales-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.sucursal-container {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    border-bottom: solid 1px grey;
+    padding: 20px;
+   
+}
+
+.sucursal-container img{
+ width: 900px;
+ height: 600px;
+ border-radius: 30px;
+ border: solid 5px #e9e9e9;
+
+}
+
+/* FOOTER */
+
+
+footer{
+    
+    background-color: black;
+    color: white;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 50px;
+    
+}
+
+.redes{
+    text-align: center;
+
+}
+
+
+
+.contacto{
+    text-align: center;
+    
+}
+
+.redes i{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.bxl-instagram:hover{
+    color: rgb(145, 45, 170);
+}
+
+.bxl-twitter:hover{
+    color: aqua;
+}
+
+.bxl-facebook:hover{
+    color:rgb(41, 41, 172)
+}
+
+.bxl-whatsapp:hover{
+    color: rgb(62, 255, 72);
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width:768px){
+
+    header label{
+        display: block;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+
+    nav #check_menu:checked ~ .nav-bar{
+
+        background: rgba(0, 0, 0, 0.925);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 500px;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+            
+    }
+
+   .nav-bar .nav-item{
+        margin: 50px;
+    }
+
+    .primer-sucursal-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primer-sucursal-img .img{
+        width: 500px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns:repeat(3,200px);
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        
+    }
+
+    .redes{
+        border-bottom: white 1px solid;
+    }
+
+    .contacto{
+        border-bottom: white 1px solid;
+    }
+
+    .platos-container{
+        display: grid;
+        grid-template-columns: 500px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
