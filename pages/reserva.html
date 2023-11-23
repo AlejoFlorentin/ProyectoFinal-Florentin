@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/pajaroloco.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/pajaroloco.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&family=Quicksand&display=swap" rel="stylesheet">
 
-    
-    <title>Contacto</title>
+    <title>Reserva</title>
     <link rel="shortcut icon" href="./Assets/img/Logo.svg" type="image/xml-svg">
-    <meta name="description" content="Gran disponibilidad de puestos de trabajos en la cocina">
+    <meta name="description" content="Reserva en cualquier de nuestras lujosas sucursales">
     <meta name="keywords" content="RESTAURANT,ARGENTINO,MENU,POSTRE,MILANESA,EMPANADAS">
 </head>
 
 <body>
-    
+
 <header>
 
     <div class="Logo-container">
-        <a href="./index.html"><img class="Logo" src="./Assets/img/Logo.svg" alt="Logo"></a>
+        <a href="../index.html"><img class="Logo" src="/Assets/img/Logo.svg" alt="Logo"></a>
     </div>
 
 
@@ -35,7 +34,7 @@
 
             <ul class="nav-bar animate__animated animate__slideInRight">
                 <li class="nav-item">
-                    <a href="./index.html"><i class='bx bx-home-alt-2'></i> Home</a>
+                    <a href="../index.html"><i class='bx bx-home-alt-2'></i> Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="./carta.html"><i class='bx bx-food-menu'></i> Menú</a>
@@ -59,54 +58,56 @@
 
 </header>
 
-    <h1 style="margin-top: 150px;text-align: center;">Trabaja con nosotros!</h1>
-
-
     
-    <main class="contacto-container ">
 
-        <img class="animate__animated animate__slideInLeft" src="./Assets/img/cocina2.jpg" alt="Trabajo">
+    <main class="main-reserva animate__animated animate__slideInDown">
+
         
-        <form class="form-contacto animate__animated animate__slideInDown" action="">
+
+        <form class="form-reserva" action="">
+
             <label for="nombre">Nombre</label><br>
-            <input type="text" name="nombre" id="nombre" placeholder="Escribe aqui" ><br>
-
-            <label for="email">Email</label><br>
-            <input type="text" name="email" id="email" placeholder="Ej:alejoflorentin@gmail.com"><br>
-
-            <label for="telefono">Telefono</label><br>
-            <input type="tel" name="telefono" id="telefono" placeholder="Ej : 1150620957" ><br>
-
-            <textarea name="coments" id="coments" cols="30" rows="5" placeholder="Arrastra aqui tu CV"></textarea><br>
-
-           <input type="submit" value="Enviar" id="boton">
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe aqui"><br>
         
+            <label for="email">Email</label><br>
+            <input  type="text" name="email" id="email" placeholder="Ej:alejoflorentin@gmail.com"><br>
+        
+            <label for="telefono">Telefono</label><br>
+            <input type="tel" name="telefono" id="telefono" placeholder="Ej : 1150620957"><br>
+
+            <label for="fecha">Fecha</label><br>
+            <input type="date" name="fecha" id="fecha"><br>
+
+            <label for="hora">Hora</label><br>
+            <input type="time" name="hora" id="hora"><br>
+        
+            <input type="submit" value="Enviar" id="boton">
             
         </form>
 
-        <img class="animate__animated animate__slideInRight" src="./Assets/img/trabajo.jpg" alt="Trabajo">
-    
-    </main>
+
+     </main>
+
 
     <footer>
         <section class="redes">
-        
+    
             <h2>Redes</h2>
             <a href=""><i class='bx bxl-instagram'></i></a>
             <a href=""><i class='bx bxl-twitter'></i></a>
             <a href=""><i class='bx bxl-facebook'></i></a>
-        
+    
         </section>
+    
         
-       
-            <a href="./index.html"><img class="Logo" src="./Assets/img/Logo.svg" alt="Logo"></a>
-       
+            <a href="../index.html"><img class="Logo" src="/Assets/img/Logo.svg" alt="Logo"></a>
         
+    
         <section class="contacto">
-        
+    
             <h2><i class='bx bxl-whatsapp'></i> Contacto</h2>
             <p>1150620957</p>
-        
+    
         </section>
     </footer>
 
