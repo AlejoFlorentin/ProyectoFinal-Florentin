@@ -1,0 +1,54 @@
+footer {
+    background-color: black;
+    color: $color_secundario;
+    height: 150px;
+    width: $ancho;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 50px;
+
+    .Logo {
+        width: 175px;
+        height: 75px;
+        border-radius: 360px;
+        background-color: $color_secundario;
+    }
+
+    .redes {
+        text-align: center;
+
+        .bxl-instagram:hover {
+            color: rgb(145, 45, 170);
+            transform: scale(1.1);
+        }
+
+        .bxl-twitter:hover {
+            color: aqua;
+            transform: scale(1.1);
+        }
+
+        .bxl-facebook:hover {
+            color: rgb(41, 41, 172);
+            transform: scale(1.1);
+        }
+
+        
+
+        i {
+            font-size: 30px;
+            margin: 10px;
+        }
+    }
+
+    .contacto {
+        text-align: center;
+               .bxl-whatsapp:hover {
+            color: rgb(62, 255, 72);
+            transform: scale(1.1);
+        }
+    }
+
+}

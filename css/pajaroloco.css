@@ -1,3 +1,416 @@
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #fcfcd5;
+}
+body p {
+  font-family: "Quicksand", sans-serif;
+}
+body h2 {
+  font-family: "Mohave", sans-serif;
+}
+body h1 {
+  font-family: "Mohave", sans-serif;
+}
+body h3 {
+  font-family: "Mohave", sans-serif;
+}
+body i {
+  color: white;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+/* NAVEGADOR */
+header {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  font-family: "Quicksand", sans-serif;
+}
+header .Logo-container {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 100px;
+}
+header .Logo-container .Logo {
+  width: 175px;
+  height: 75px;
+  border-radius: 360px;
+  background-color: white;
+}
+header nav #check_menu {
+  display: none;
+}
+header nav label {
+  display: none;
+}
+header nav label i {
+  font-size: 50px;
+}
+header nav .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 1, 25em;
+  height: 60px;
+}
+header nav .nav-bar .nav-item {
+  margin-left: 100px;
+}
+
+/* INDEX */
+.index-main {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.index-main .historia {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f1b7;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 15px;
+  margin-bottom: 50px;
+}
+.index-main .historia h2 {
+  margin-bottom: 25px;
+  text-decoration: underline;
+}
+.index-main .Primer-sucursal {
+  margin-bottom: 50px;
+  background-color: #f1f1b7;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+}
+.index-main .Primer-sucursal .primer-sucursal-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.index-main .Primer-sucursal .primer-sucursal-img img {
+  width: 750px;
+  height: 500px;
+  border-radius: 25px;
+}
+.index-main .Primer-sucursal .primer-sucursal-img iframe {
+  border-radius: 25px;
+  margin-top: 50px;
+}
+.index-main .carrusel-container {
+  width: 55%;
+  border-radius: 20px;
+}
+.index-main .carrusel-container .carrusel {
+  height: 550px;
+  border-radius: 15px;
+}
+
+/* RESERVA */
+.main-reserva {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-reserva .form-reserva {
+  text-align: center;
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 600px;
+  width: 400px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.main-reserva .form-reserva input {
+  border-radius: 5px;
+  width: 250px;
+  height: 35px;
+  border-color: white;
+  padding: 10px;
+}
+.main-reserva .form-reserva input:hover {
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(190, 255, 255);
+}
+
+/* CONTACTO */
+.contacto-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 150px;
+  margin-top: 115px;
+}
+.contacto-container .form-contacto {
+  text-align: center;
+  background-color: rgb(219, 219, 219);
+  border: solid rgb(207, 200, 200) 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 550px;
+  width: 400px;
+  position: relative;
+}
+.contacto-container .form-contacto input {
+  border-radius: 5px;
+  width: 250px;
+  height: 35px;
+  border-color: white;
+  padding: 10px;
+}
+.contacto-container .form-contacto input:hover {
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(190, 255, 255);
+}
+.contacto-container img {
+  border: solid gray 1px;
+  border-radius: 20px;
+  width: 400px;
+}
+.contacto-container #fecha {
+  width: 110px;
+}
+.contacto-container #hora {
+  width: 110px;
+}
+
+label {
+  font-family: "Quicksand", sans-serif;
+}
+
+input {
+  border-radius: 5px;
+  width: 250px;
+  height: 35px;
+  border-color: white;
+  padding: 10px;
+}
+
+#boton {
+  background-image: linear-gradient(to right, #000000, #040404, #090909, #0d0d0d, #101010, #141414, #181818, #1c1c1c, #222222, #292929, #303030, #373737);
+  font-family: "Mohave", sans-serif;
+  color: white;
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  background-position: left;
+  background-size: 200%;
+}
+#boton:hover {
+  background-position: right;
+  transform: scale(1.1);
+}
+
+/* CARTA */
+.main-menu h2 {
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: underline;
+}
+.main-menu .platos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 680px);
+  background-color: #f1f1b7;
+  border-radius: 30px;
+  margin: 30px;
+}
+.main-menu .platos-container .Platos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+  background-color: #fcfcd5;
+  border-radius: 50px;
+}
+.main-menu .platos-container .Platos:hover {
+  transform: scale(1.1);
+  border: solid 1px rgb(224, 224, 224);
+}
+.main-menu .platos-container .Platos img {
+  height: 250px;
+  width: 250px;
+  border-radius: 360px;
+  border: solid 5px #e9e9e9;
+}
+.main-menu .platos-container .Platos h3 {
+  margin-bottom: 10px;
+}
+
+/* SUCURSALES */
+.sucursales-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sucursales-container .sucursal-container {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  border-bottom: solid 1px grey;
+  padding: 20px;
+}
+.sucursales-container .sucursal-container img {
+  width: 900px;
+  height: 600px;
+  border-radius: 30px;
+  border: solid 5px #e9e9e9;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin-top: 50px;
+}
+footer .Logo {
+  width: 175px;
+  height: 75px;
+  border-radius: 360px;
+  background-color: white;
+}
+footer .redes {
+  text-align: center;
+}
+footer .redes .bxl-instagram:hover {
+  color: rgb(145, 45, 170);
+  transform: scale(1.1);
+}
+footer .redes .bxl-twitter:hover {
+  color: aqua;
+  transform: scale(1.1);
+}
+footer .redes .bxl-facebook:hover {
+  color: rgb(41, 41, 172);
+  transform: scale(1.1);
+}
+footer .redes i {
+  font-size: 30px;
+  margin: 10px;
+}
+footer .contacto {
+  text-align: center;
+}
+footer .contacto .bxl-whatsapp:hover {
+  color: rgb(62, 255, 72);
+  transform: scale(1.1);
+}
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/*Media header y footer*/
+@media (max-width: 768px) {
+  header nav label {
+    display: block;
+  }
+  header nav .nav-bar {
+    display: none;
+  }
+  header nav #check_menu:checked ~ .nav-bar {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(158, 158, 158));
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 500px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  header nav #check_menu:checked ~ .nav-bar .nav-item {
+    margin: 50px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  footer .redes {
+    border-bottom: white 1px solid;
+  }
+  footer .contacto {
+    border-bottom: white 1px solid;
+  }
+}
+/* Media Index */
+@media (max-width: 768px) {
+  .index-main .Primer-sucursal .primer-sucursal-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .index-main .Primer-sucursal .primer-sucursal-img .img {
+    width: 500px;
+  }
+}
+/* Media Menu */
+@media (max-width: 768px) {
+  .main-menu .platos-container {
+    display: grid;
+    grid-template-columns: 500px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Media Sucursales */
+@media (max-width: 768px) {
+  .sucursales-container .sucursal-container img {
+    width: 600px;
+  }
+}
+/* Media Contacto */
+@media (max-width: 768px) {
+  .contacto-container img {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=pajaroloco.css.map */

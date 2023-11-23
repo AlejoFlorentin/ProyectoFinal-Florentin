@@ -1,0 +1,313 @@
+@import "./partials/variables";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcfcd5;
+
+   p {
+    font-family: $fuente_2;
+}
+
+   h2 {
+    font-family: $fuente_1;
+}
+
+   h1 {
+    font-family: $fuente_1;
+}
+
+   h3 {
+    font-family: $fuente_1;
+}
+
+    i {
+    color:$color_secundario;
+} 
+
+    a {
+    text-decoration: none;
+    color: $color_secundario;
+}
+
+}
+
+/* NAVEGADOR */
+
+@import "./partials/header";
+
+/* INDEX */
+
+.index-main {
+             margin-top: 150px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: space-between;
+             width: $ancho;
+
+             .historia {
+                        text-align: center;
+                        font-family: 'Montserrat', sans-serif;
+                        background-color: $color_primario;
+                        padding: 30px;
+                        border-radius: 20px;
+                        margin: 15px;
+                        margin-bottom: 50px;
+
+                        h2 {
+                            margin-bottom: 25px;
+                            text-decoration: underline;
+                           }                       
+                       }
+
+            .Primer-sucursal {
+                              margin-bottom: 50px;
+                              background-color: $color_primario;
+                              border-radius: 20px;
+                              padding: 30px;
+                              width: $ancho;
+
+                              .primer-sucursal-img {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: space-around;
+                                                    margin-top: 50px;
+
+                                                    img {
+                                                         width: 750px;
+                                                         height: 500px;
+                                                         border-radius: 25px;
+                                                        }
+
+                                                    iframe {
+                                                            border-radius: 25px;
+                                                            margin-top: 50px;
+                                                           }
+                                                   }
+                             }
+
+           .carrusel-container {
+                                width: ($ancho)-45%;
+                                border-radius: 20px;
+
+                                .carrusel {
+                                           height: 550px;
+                                           border-radius: 15px;
+            
+                                          }
+                               }
+}
+
+/* RESERVA */
+
+.main-reserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+               .form-reserva {
+                              text-align: center;
+                              background-color: rgb(219, 219, 219);
+                              display: flex;
+                              flex-direction: column;
+                              flex-wrap: wrap;
+                              justify-content: center;
+                              align-items: center;
+                              border-radius: 15px;
+                              height: 600px;
+                              width: 400px;
+                              margin-top: 150px;
+                              margin-bottom: 150px;
+
+                            input {
+                                    border-radius: 5px;
+                                    width: 250px;
+                                    height: 35px;
+                                    border-color: $color_secundario;
+                                    padding: 10px;
+                                  
+
+                                   &:hover {
+                                            background-color: rgb(240, 240, 240);
+                                            border-color: rgb(190, 255, 255);
+                                           } 
+                                  }
+                             }
+}
+
+
+/* CONTACTO */
+
+
+
+.contacto-container {
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: space-around;
+                     margin-bottom: 150px;
+                     margin-top: 115px;
+
+                     .form-contacto {
+                                     text-align: center;
+                                     background-color: rgb(219, 219, 219);
+                                     border: solid rgb(207, 200, 200) 1px;
+                                     display: flex;
+                                     flex-direction: column;
+                                     flex-wrap: wrap;
+                                     justify-content: center;
+                                     align-items: center;
+                                     border-radius: 15px;
+                                     height: 550px;
+                                     width: 400px;
+                                     position: relative;
+
+                                    input {
+                                            border-radius: 5px;
+                                            width: 250px;
+                                            height: 35px;
+                                            border-color: $color_secundario;
+                                            padding: 10px;
+
+                                           &:hover{
+                                                  background-color: rgb(240, 240, 240);
+                                                  border-color: rgb(190, 255, 255);
+                                                 } 
+                                          }
+
+                                      
+                                    }
+
+                    img {
+                         border: solid gray 1px;
+                         border-radius: 20px;
+                         width: 400px;
+                        }
+
+                    #fecha {
+                            width: 110px;
+                           }
+
+                    #hora {
+                           width: 110px;
+                          }
+}
+
+label {
+    font-family: $fuente_2;
+}
+
+input {
+    border-radius: 5px;
+    width: 250px;
+    height: 35px;
+    border-color:$color_secundario;
+    padding: 10px;
+
+}
+
+#boton {
+    background-image: linear-gradient(to right, #000000, #040404, #090909, #0d0d0d, #101010, #141414, #181818, #1c1c1c, #222222, #292929, #303030, #373737);
+    font-family: $fuente_1;
+    color: $color_secundario;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    background-position: left;
+    background-size: 200%;
+        &:hover{
+                 background-position: right;
+                transform: scale(1.1);
+        }
+}
+
+/* CARTA */
+
+.main-menu {
+            h2{
+               text-align: center;
+               margin-top: 50px;
+               text-decoration: underline; 
+              }
+
+            .platos-container {
+                               display: grid;
+                               grid-template-columns: repeat(3, 680px);
+                               background-color: #f1f1b7;
+                               border-radius: 30px;
+                               margin: 30px;
+
+                               .Platos {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        margin: 50px;
+                                        text-align: center;
+                                        width: 400px;
+                                        padding: 20px;
+                                        background-color: #fcfcd5;
+                                        border-radius: 50px;
+                                        
+                                    
+
+                                        &:hover{
+                                                transform: scale(1.1);
+                                                border: solid 1px rgb(224, 224, 224);
+                                                
+                                                
+                                               }
+
+                                        img {
+                                             height: 250px;
+                                             width: 250px;
+                                             border-radius: 360px;
+                                             border: solid 5px #e9e9e9;
+                                            }
+
+                                        h3  {
+                                             margin-bottom: 10px;
+                                            }
+                                       }
+                               }
+}
+
+/* SUCURSALES */
+
+.sucursales-container {
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: space-around;
+                       align-items: center;
+                       flex-wrap: wrap;
+
+                      .sucursal-container {
+                                           text-align: center;
+                                           margin-bottom: 15px;
+                                           margin-top: 50px;
+                                           border-bottom: solid 1px grey;
+                                           padding: 20px;
+
+                                           img {
+                                                width: 900px;
+                                                height: 600px;
+                                                border-radius: 30px;
+                                                border: solid 5px #e9e9e9;
+                                               }
+                                          }
+}
+
+/* FOOTER */
+
+@import "./partials/footer";
+
+/* MEDIA QUERIES */
+
+@import "./partials/mediaqueries";
+
+
+

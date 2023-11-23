@@ -1,0 +1,58 @@
+header {
+    background-color: black;
+    width: $ancho;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    font-family: $fuente_2;
+
+    .Logo-container {
+        display: flex;
+        align-items: center;
+        width: ($ancho)-70%;
+        height: 100px;
+
+        .Logo {
+            width: 175px;
+            height: 75px;
+            border-radius: 360px;
+            background-color: $color_secundario;
+        }
+
+    }
+
+    nav {
+        #check_menu {
+            display: none;
+        }
+
+        label {
+            display: none;
+
+            i {
+                font-size: 50px;
+            }
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            font-size: 1, 25em;
+            height: 60px;
+
+            .nav-item {
+                margin-left: 100px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,112 @@
+/* MEDIA QUERIES */
+
+/*Media header y footer*/
+
+@media(max-width:768px) {
+    header {
+        nav {
+            label {
+                display: block;
+            }
+
+            .nav-bar {
+                display: none;
+            }
+
+            #check_menu:checked~ {
+                                  
+                .nav-bar {
+                    background: linear-gradient(to right,rgb(0, 0, 0),rgb(158, 158, 158));
+                    width: $ancho;
+                    height: 100vh;
+                    position: absolute;
+                    left: 500px;
+                    top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+
+
+                    .nav-item {
+                        margin: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        .redes {
+            border-bottom: $color_secundario 1px solid;
+        }
+
+        .contacto {
+            border-bottom: $color_secundario 1px solid;
+        }
+    }
+}
+
+/* Media Index */
+
+@media(max-width:768px) {
+    .index-main {
+        .Primer-sucursal {
+            .primer-sucursal-img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .img {
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
+
+/* Media Menu */
+
+@media(max-width:768px) {
+    .main-menu {
+        .platos-container {
+            display: grid;
+            grid-template-columns: 500px;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+}
+
+/* Media Sucursales */
+
+@media(max-width:768px) {
+    .sucursales-container {
+        .sucursal-container {
+            img {
+                width: 600px;
+            }
+        }
+    }
+
+}
+
+/* Media Contacto */
+
+@media(max-width:768px) {
+    .contacto-container {
+        img {
+            display: none;
+        }
+    }
+}
