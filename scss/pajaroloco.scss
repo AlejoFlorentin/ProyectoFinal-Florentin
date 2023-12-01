@@ -97,9 +97,8 @@ body {
                                 border-radius: 20px;
 
                                 .carrusel {
-                                           height: 550px;
+                                           height: 500px;
                                            border-radius: 15px;
-            
                                           }
                                }
 }
@@ -298,12 +297,44 @@ input {
                                                 border-radius: 30px;
                                                 border: solid 5px #e9e9e9;
                                                }
+                                               
                                           }
 }
 
 /* FOOTER */
 
 @import "./partials/footer";
+
+/* ERROR 404 */
+
+.error-container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+               
+                  .contenido-error{
+                    
+                    text-align: center;
+                    font-size: 2rem;
+
+                    h1{
+                        margin-bottom: 50px;
+                        i{
+                            color: red;
+                        }
+                    }
+
+                    a{
+                        color:red;
+                    }
+                 }
+               
+               
+    
+}
 
 /* MEDIA QUERIES */
 

@@ -126,7 +126,7 @@ header nav .nav-bar .nav-item {
   border-radius: 20px;
 }
 .index-main .carrusel-container .carrusel {
-  height: 550px;
+  height: 500px;
   border-radius: 15px;
 }
 
@@ -340,7 +340,28 @@ footer .contacto .bxl-whatsapp:hover {
   transform: scale(1.1);
 }
 
-/* MEDIA QUERIES */
+/* ERROR 404 */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.error-container .contenido-error {
+  text-align: center;
+  font-size: 2rem;
+}
+.error-container .contenido-error h1 {
+  margin-bottom: 50px;
+}
+.error-container .contenido-error h1 i {
+  color: red;
+}
+.error-container .contenido-error a {
+  color: red;
+}
+
 /* MEDIA QUERIES */
 /*Media header y footer*/
 @media (max-width: 768px) {
@@ -389,6 +410,9 @@ footer .contacto .bxl-whatsapp:hover {
   }
   .index-main .Primer-sucursal .primer-sucursal-img .img {
     width: 500px;
+  }
+  .index-main .carrusel-container .carrusel img {
+    height: 500px;
   }
 }
 /* Media Menu */
